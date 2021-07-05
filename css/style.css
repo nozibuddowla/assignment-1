@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Bold.ttf") format("ttf"),
+        url("/fonts/Montserrat-ExtraBold.ttf") format("ttf"),
+        url("/fonts/Montserrat-Medium.ttf") format("ttf"),
+        url("/fonts/Montserrat-Regular.ttf") format("ttf"),
+        url("/fonts/Montserrat-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url("/fonts/Manrope-VariableFont_wght.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav-wrapper {
+    font-family: Montserrat;
+    margin: 20px 0px;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+    line-height: 1 !important;
+    max-width: 1200px;
+    padding: 30px 0;
+
+}
+
+.logo a {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1;
+    color: black;
+    float: left;
+}
+
+.routes {
+    text-align: center;
+    float: right;
+}
+.routes ul {
+    list-style: none;
+}
+
+.routes ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.routes ul li a{
+    color: black;
+}
+.hero-section{
+    padding: 72px 0px;
+}
+.width-50{
+    width: 45%;
+    float: left;
+}
