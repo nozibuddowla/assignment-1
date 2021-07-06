@@ -1,5 +1,6 @@
 @font-face {
-    font-family: Montserrat;
+    font-family: 'Montserrat',
+        sans-serif;
     src: url("/fonts/Montserrat-Bold.ttf") format("ttf"),
         url("/fonts/Montserrat-ExtraBold.ttf") format("ttf"),
         url("/fonts/Montserrat-Medium.ttf") format("ttf"),
@@ -8,7 +9,7 @@
 }
 
 @font-face {
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     src: url("/fonts/Manrope-VariableFont_wght.ttf") format("ttf");
 }
 
@@ -19,6 +20,7 @@
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     background: #E5E5E5;
 }
 
@@ -30,6 +32,14 @@ a {
     text-decoration: none;
 }
 
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -38,7 +48,6 @@ a {
 }
 
 .nav-wrapper {
-    font-family: Montserrat;
     margin: 20px 0px;
     border-top: .5px solid black;
     border-bottom: .5px solid black;
@@ -49,21 +58,19 @@ a {
 }
 
 .logo a {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 17px;
     line-height: 1;
     color: black;
-    float: left;
+}
+
+.logo a:hover {
+    cursor: crosshair;
 }
 
 .routes {
     text-align: center;
     float: right;
-}
-
-.routes ul {
-    list-style: none;
 }
 
 .routes ul li {
@@ -95,7 +102,6 @@ a {
 }
 
 .width-50 h1 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
@@ -109,7 +115,6 @@ a {
 }
 
 .width-50 p {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -120,14 +125,12 @@ a {
 }
 
 .width-50 .button {
-    /* align-items: center; */
     display: inline-block;
     padding: 22px 64px;
     background: linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
     box-shadow: 0px 2px 30px rgba(252, 143, 73, 0.5);
     border-style: none;
     border-radius: 100px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -139,6 +142,12 @@ a {
 .width-50 a:hover {
     background: #FBA24F;
     color: #575757;
+}
+
+.hero-bg img {
+    background-image: url("../images/bg7.png");
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
 }
 
 .cover-section {
@@ -177,7 +186,6 @@ a {
 }
 
 .recipe-head h1 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -190,7 +198,6 @@ a {
 }
 
 .recipe-head p {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -213,6 +220,8 @@ a {
     padding: 5%;
     border-radius: 30px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    min-height: 500px;
 }
 
 
@@ -222,7 +231,6 @@ a {
 }
 
 .recipe-body h3 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 25px;
@@ -233,7 +241,6 @@ a {
 }
 
 .recipe-body p {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -242,12 +249,10 @@ a {
 }
 
 .state-content {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #18191F;
     margin-top: 100px;
     margin-bottom: 92px;
     padding: 64px 165px;
@@ -263,6 +268,22 @@ a {
 
 .state-box {
     margin: 0px 30px;
+}
+
+.state-box a {
+    color: #18191F;
+}
+
+.state-box a:hover {
+    color: orange;
+}
+
+.state-box h2 {
+    margin-bottom: 0.5em;
+}
+
+.state-box p {
+    color: #18191F;
 }
 
 .state-column {
@@ -281,7 +302,7 @@ a {
 
 }
 
-#recipes {
+#recipes-1 {
     background: #f4c2db;
 
 }
@@ -290,7 +311,6 @@ a {
     padding: 5%;
     border: 1px solid black;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    font-family: Montserrat;
     height: 100%;
     min-height: 500px;
     text-align: center;
@@ -327,7 +347,6 @@ a {
 
 .primary {
     display: inline-block;
-    font-family: Manrope;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -342,14 +361,13 @@ a {
     background: #fff;
 }
 
-#recipes-1 {
+#recipes-2 {
     background: #f9a252;
 
 }
 
 #recipes-3 {
-    background-color: #9e99ad;
-    ;
+    background: #9e99ad;
 }
 
 .foot-sec {
@@ -357,7 +375,6 @@ a {
 }
 
 .foot-sec h1 {
-    font-family: Manrope;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -372,7 +389,6 @@ a {
 }
 
 .foot-sec p {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
